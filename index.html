@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="Header">
+      <h1>HODLINFO</h1>
+      <nav>
+        <div class="box-sec">
+          <select name="currency" id="currency">
+            <option value="INR">INR</option>
+          </select>
+        </div>
+        <div class="box-sec">
+          <select name="cryptocurrency" id="cryptocurrency">
+            <option value="BTC">BTC</option>
+            <option value="ETH">ETH</option>
+            <option value="USDT">USDT</option>
+            <option value="XRP">XRP</option>
+            <option value="TRX">TRX</option>
+            <option value="DASH">DASH</option>
+            <option value="ZEC">ZEC</option>
+            <option value="XEM">XEM</option>
+            <option value="IOST">IOST</option>
+            <option value="WIN">WIN</option>
+            <option value="BTT">BTT</option>
+            <option value="WRX">WRX</option>
+          </select>
+        </div>
+        <div class="box-sec">
+          <button>Buy BTC</button>
+        </div>
+      </nav>
+      <div class="third-div">
+        <span class="timer">25</span>
+        <a href="https://web.telegram.org/a/#1061548818">
+          <button class="button_connect_on_telegram">
+            <i class="fab fa-telegram text-1xl"></i>
+            <span> Connect Telegram </span>
+          </button>
+        </a>
+        <div class="toggle-button">
+          <div class="toggle-circle"></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="ticketContainer">
+      <span class="tableNames">#</span>
+      <span class="tableNames">Platform</span>
+      <span class="tableNames">Last Traded Price </span>
+      <span class="tableNames">Buy / Sell Price</span>
+      <span class="tableNames">Volume</span>
+      <span class="tableNames">Base Unit</span>
+    </div>
+    <div class="showContainer">
+      <div class="loading-circle"></div>
+    </div>
+
+    <script src="./server/public/DomHandler.js"></script>
+  </body>
+</html>
